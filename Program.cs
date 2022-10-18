@@ -1,4 +1,6 @@
-﻿namespace SnakeAndLadder
+﻿using System;
+
+namespace SnakeAndLadder
 {
     class Program
     {
@@ -7,6 +9,7 @@
             Console.WriteLine("Welcome to Snake and Ladder Simulator");
             Console.WriteLine("Use case #1: Single Player at Position Zero");
             Console.WriteLine("Use case #2: Single Player Rolls the Die");
+            Console.WriteLine("Use case #3: Single Player Checks for Options After Die Roll");
 
             Console.Write("Choose a use case number to run the program: ");
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -19,6 +22,9 @@
                     break;
                 case 2:
                     SinglePlayerRollsDie.RollDie();
+                    break;
+                case 3:
+                    SinglePlayerChecksOption.CheckOption();
                     break;
                 default:
                     Console.WriteLine("Please enter a valid use case number!");
