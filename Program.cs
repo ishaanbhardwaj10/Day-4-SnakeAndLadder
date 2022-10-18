@@ -12,6 +12,7 @@ namespace SnakeAndLadder
             Console.WriteLine("Use case #3: Single Player Checks for Options After Die Roll");
             Console.WriteLine("Use case #4: Single Player Reaches Winning Position");
             Console.WriteLine("Use case #5: Single Player Reaches Exact Winning Position Hundred");
+            Console.WriteLine("Use case #6: Single Player Game Statistics Report");
 
             Console.Write("Choose a use case number to run the program: ");
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -33,6 +34,9 @@ namespace SnakeAndLadder
                     break;
                 case 5:
                     SinglePlayerExactWinningPosition.ExactPositionHundred();
+                    break;
+                case 6:
+                    SinglePlayerStatisticsReport.PlayGame();
                     break;
                 default:
                     Console.WriteLine("Please enter a valid use case number!");
